@@ -1,0 +1,11 @@
+json = collection.map {|item|
+  {
+    id: item.id,
+    url: url(item.id),
+    upload: {
+      id: item.upload_id,
+      url: url("/uploads/#{item.upload_id}", true, false)
+    },
+    position: item.position
+  }
+}

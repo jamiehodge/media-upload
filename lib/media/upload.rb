@@ -1,0 +1,5 @@
+require_relative "upload/controllers"
+require_relative "upload/models"
+require_relative "upload/policies"
+require_relative "upload/presenters"
+require_relative "upload/tasks"
